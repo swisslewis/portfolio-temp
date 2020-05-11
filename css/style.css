@@ -17,6 +17,12 @@
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
   line-height: 1.8rem;
+  width: 45rem;
+}
+
+.main .web-header {
+  color: black;
+  margin-bottom: 1rem;
 }
 
 .main .big {
@@ -31,10 +37,6 @@
 
 .main .me {
   margin: 1rem;
-}
-
-.main .me-two {
-  margin-top: 1rem;
 }
 
 .main .button {
@@ -83,11 +85,22 @@
 }
 
 .buttons-web p {
-  margin: 0.5rem 0 0.5rem;
+  margin: 1.5rem 0 1rem;
 }
 
 .buttons-web .button {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0;
   width: 8rem;
+}
+
+.buttons-web .inverse {
+  margin: 0.5rem 0 0;
+  background-color: #13cc0d;
+  color: white;
+}
+
+.buttons-web .inverse:hover {
+  color: black;
+  background-color: #09ff00;
 }
 /*# sourceMappingURL=style.css.map */

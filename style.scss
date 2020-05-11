@@ -4,17 +4,25 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
     h1 {
         font-family: 'Noto Sans', sans-serif;
         margin: 0.5rem 0 0;
         color: rgb(19, 204, 13);
     }
-    
+
     p {
         font-family: 'Open Sans', sans-serif;
         margin-bottom: 1.5rem;
         font-size: 0.9rem;
-        line-height: 1.8rem;;
+        line-height: 1.8rem;
+        width: 45rem;
+        ;
+    }
+
+    .web-header {
+        color: black;
+        margin-bottom: 1rem;
     }
 
     .big {
@@ -29,10 +37,6 @@
 
     .me {
         margin: 1rem;
-    }
-    
-    .me-two {
-        margin-top: 1rem;
     }
 
     .button {
@@ -79,11 +83,24 @@
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
+
     p {
-        margin: 0.5rem 0 0.5rem;
+        margin: 1.5rem 0 1rem;
     }
+
     .button {
-        margin: 1rem 0 0 0;
+        margin: 1rem 0 0;
         width: 8rem;
+    }
+
+    .inverse {
+        margin: 0.5rem 0 0;
+        background-color: rgb(19, 204, 13);
+        color: white;
+    }
+
+    .inverse:hover {
+        color: black;
+        background-color: rgb(9, 255, 0);
     }
 }
