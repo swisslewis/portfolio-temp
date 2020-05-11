@@ -1,0 +1,89 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+        font-family: 'Noto Sans', sans-serif;
+        margin: 0.5rem 0 0;
+        color: rgb(19, 204, 13);
+    }
+    
+    p {
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        line-height: 1.8rem;;
+    }
+
+    .big {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .logo {
+        width: 10rem;
+        margin: 2rem 0 0.5rem;
+    }
+
+    .me {
+        margin: 1rem;
+    }
+    
+    .me-two {
+        margin-top: 1rem;
+    }
+
+    .button {
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+        border-radius: 10px;
+        height: 2.5rem;
+        width: 8rem;
+        margin: 0 0.5rem 1.5rem 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        border: none;
+        background-color: rgb(19, 204, 13);
+    }
+
+    .inverse {
+        color: black;
+        border: 3px solid rgb(19, 204, 13);
+        border-radius: 10px;
+        height: 2.5rem;
+        width: 8rem;
+        margin: 0 0 1.5rem 0.5rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .inverse:hover {
+        border: none;
+        background-color: rgb(19, 204, 13);
+    }
+}
+
+.buttons-web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    p {
+        margin: 0.5rem 0 0.5rem;
+    }
+    .button {
+        margin: 1rem 0 0 0;
+        width: 8rem;
+    }
+}
