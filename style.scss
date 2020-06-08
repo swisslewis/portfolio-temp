@@ -40,6 +40,10 @@ body {
     height: 100vh;
     background-color: black;
 
+    @include tablet {
+        height: 100%;
+    }
+
     h1 {
         font-family: 'Righteous', cursive;
         margin: 1rem 0 0.5rem;
@@ -174,6 +178,12 @@ body {
 
 .circles {
     display: flex;
+
+    @include tablet 
+    {
+        display: grid;
+        grid-template-columns: 100%;
+    }
 }
 
 .project {
