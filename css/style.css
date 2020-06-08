@@ -14,7 +14,7 @@ body {
   background-color: black;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .main {
     height: 100%;
   }
@@ -40,7 +40,7 @@ body {
   margin: 2rem 0 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .main h3 {
     width: 20rem;
   }
@@ -53,7 +53,7 @@ body {
   margin-top: 1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .main h4 {
     width: 20rem;
   }
@@ -68,7 +68,7 @@ body {
   color: white;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .main p {
     width: 20rem;
   }
@@ -123,7 +123,7 @@ img {
   display: flex;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .circles {
     display: grid;
     grid-template-columns: 100%;
