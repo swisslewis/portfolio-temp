@@ -21,11 +21,11 @@ body {
 }
 
 .main h1 {
-  font-family: 'Righteous', cursive;
-  margin: 1rem 0 1rem;
+  font-family: 'Roboto Slab', serif;
+  margin: 1rem 0 1.5rem;
   color: #f0195a;
-  font-size: 3.5rem;
-  letter-spacing: 15px;
+  font-size: 3rem;
+  letter-spacing: 10px;
 }
 
 @media (max-width: 420px) {
@@ -154,11 +154,12 @@ img {
 .menu .button {
   background-color: #f0195a;
   border: solid 2px #f0195a;
-  border-radius: 2px;
+  border-radius: 5px;
   color: white;
   padding: 10px 0;
   margin: 1rem 1rem 1rem;
   width: 8rem;
+  height: 2.5rem;
   cursor: pointer;
   font-size: 1rem;
 }
@@ -166,10 +167,11 @@ img {
 .menu .inverse {
   background-color: black;
   border: solid 2px #f0195a;
-  border-radius: 2px;
+  border-radius: 5px;
   color: white;
   padding: 10px 0;
   width: 8rem;
+  height: 2.5rem;
   margin: 1rem 1rem 1rem;
   cursor: pointer;
   font-size: 1rem;
