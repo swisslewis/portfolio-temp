@@ -72,6 +72,10 @@ body {
   margin: 2rem 0 0.5rem;
 }
 
+img {
+  margin-top: 2rem;
+}
+
 .project {
   display: flex;
   flex-direction: column;
