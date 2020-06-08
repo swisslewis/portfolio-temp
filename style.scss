@@ -55,11 +55,16 @@ body {
     h3 {
         color: white;
         font-family: 'Noto Sans', sans-serif;
-        margin: 0.5rem 0 0;
+        margin: 2rem 0 0;
 
         @include tablet {
             width: 20rem;
         }
+    }
+
+    h4 {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
     }
 
     p {
@@ -123,11 +128,6 @@ body {
     h2 {
         color: rgb(240, 25, 90);
         margin-bottom: 0.5rem;
-    }
-
-    h3 {
-        margin: 0;
-        font-size: 1rem;
     }
 }
 
