@@ -53,6 +53,12 @@ body {
   margin-top: 1rem;
 }
 
+@media (max-width: 900px) {
+  .main h4 {
+    width: 20rem;
+  }
+}
+
 .main p {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 0rem;
@@ -80,6 +86,22 @@ body {
 .main .logo {
   width: 13rem;
   margin: 2rem 0 0.5rem;
+}
+
+.main .menu {
+  display: flex;
+}
+
+@media (max-width: 420px) {
+  .main .menu .button,
+  .main .menu .inverse {
+    border: none;
+    background-color: black !important;
+    color: #f0195a;
+    text-decoration: underline;
+    margin: 0;
+    width: 5rem;
+  }
 }
 
 img {
@@ -127,15 +149,6 @@ img {
 .project h2 {
   color: #f0195a;
   margin-bottom: 0.5rem;
-}
-
-@media (max-width: 420px) {
-  .menu {
-    border: none;
-    background-color: none;
-    color: #f0195a;
-    text-decoration: underline;
-  }
 }
 
 .menu .button {

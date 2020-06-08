@@ -52,6 +52,7 @@ body {
         color: rgb(240, 25, 90);
         font-size: 3rem;
         letter-spacing: 5px;
+
         @include mobile {
             font-size: 1.5rem;
         }
@@ -72,6 +73,10 @@ body {
         font-family: 'Open Sans', sans-serif;
         margin: 0;
         margin-top: 1rem;
+
+        @include tablet {
+            width: 20rem;
+        }
     }
 
     p {
@@ -99,6 +104,22 @@ body {
     .logo {
         width: 13rem;
         margin: 2rem 0 0.5rem;
+    }
+
+    .menu {
+        display: flex;
+
+        @include mobile {
+            .button,
+            .inverse {
+                border: none;
+                background-color: black !important;
+                color: rgb(240, 25, 90);
+                text-decoration: underline;
+                margin: 0;
+                width: 5rem;
+            }
+        }
     }
 }
 
@@ -148,12 +169,6 @@ img {
 }
 
 .menu {
-    @include mobile {
-        border: none;
-        background-color: none;
-        color: rgb(240, 25, 90);
-        text-decoration: underline;
-    }
     .button {
         background-color: rgb(240, 25, 90);
         border: solid 2px rgb(240, 25, 90);
