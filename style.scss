@@ -29,6 +29,8 @@ $desktop-width: 1024px;
 
 body {
     margin: 0;
+    background-color: black;
+    height: 100%;
 }
 
 .main {
@@ -37,7 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     background-color: black;
 
     @include tablet {
@@ -65,6 +67,8 @@ body {
     h4 {
         color: white;
         font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        margin-top: 1rem;
     }
 
     p {
@@ -169,4 +173,8 @@ img {
         background-color: orange;
         border: solid 2px orange;
     }
+}
+
+.footer-text {
+    padding-bottom: 4rem;
 }
