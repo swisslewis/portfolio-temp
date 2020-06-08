@@ -59,7 +59,9 @@ body {
         line-height: 1.8rem;
         width: 45rem;
         color: white;
-        ;
+        @include tablet {
+            width: 20rem;
+        }
     }
 
     a {

@@ -35,6 +35,12 @@ body {
   color: white;
 }
 
+@media (max-width: 900px) {
+  .main p {
+    width: 20rem;
+  }
+}
+
 .main a {
   color: #f0195a;
   font-weight: bold;
