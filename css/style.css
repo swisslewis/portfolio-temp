@@ -87,6 +87,10 @@ img {
   margin-top: 1rem;
 }
 
+.project h3 {
+  margin-top: 0;
+}
+
 .circles {
   display: flex;
 }
@@ -104,6 +108,7 @@ img {
 
 .project .circle {
   width: 15rem;
+  margin: 0;
 }
 
 .project h2,
