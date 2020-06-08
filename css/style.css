@@ -28,6 +28,12 @@ body {
   letter-spacing: 5px;
 }
 
+@media (max-width: 420px) {
+  .main h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .main h3 {
   color: white;
   font-family: 'Noto Sans', sans-serif;
@@ -121,6 +127,15 @@ img {
 .project h2 {
   color: #f0195a;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 420px) {
+  .menu {
+    border: none;
+    background-color: none;
+    color: #f0195a;
+    text-decoration: underline;
+  }
 }
 
 .menu .button {
