@@ -16,7 +16,7 @@ body {
   font-family: 'Righteous', cursive;
   margin: 1rem 0 0.5rem;
   color: #f0195a;
-  font-size: 2.5rem;
+  font-size: 3rem;
   letter-spacing: 5px;
 }
 
@@ -32,6 +32,10 @@ body {
 .main a {
   color: #f0195a;
   font-weight: bold;
+}
+
+.main a:hover {
+  color: orange;
 }
 
 .main .big {
