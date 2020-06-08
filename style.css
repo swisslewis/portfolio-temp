@@ -13,9 +13,11 @@ body {
 }
 
 .main h1 {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Righteous', cursive;
   margin: 1rem 0 0.5rem;
   color: #f0195a;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
 }
 
 .main p {
@@ -166,5 +168,6 @@ body {
 
 .project h3 {
   margin: 0;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
