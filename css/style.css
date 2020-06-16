@@ -104,6 +104,10 @@ body {
   }
 }
 
+.main .photo {
+  width: 15rem;
+}
+
 img {
   margin-top: 2rem;
 }
