@@ -22,23 +22,16 @@ body {
 
 .main h1 {
   font-family: 'MuseoModerno', cursive;
-  margin: 0;
+  margin: 1rem;
   color: #f0195a;
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: 5px;
-  padding: 0 5rem;
 }
 
 @media (max-width: 420px) {
   .main h1 {
     font-size: 1.5rem;
   }
-}
-
-.main .heading-background {
-  background-color: #1f1f1f;
-  border-radius: 2px;
-  margin: 1.7rem 0;
 }
 
 .main h3 {
