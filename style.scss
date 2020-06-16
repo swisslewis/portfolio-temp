@@ -50,9 +50,9 @@ body {
         font-family: 'MuseoModerno', cursive;
         margin: 0;
         color: rgb(240, 25, 90);
-        font-size: 2.5rem;
+        font-size: 3rem;
         letter-spacing: 5px;
-        padding: 0 5.5rem;
+        padding: 0 5rem;
 
         @include mobile {
             font-size: 1.5rem;
@@ -60,7 +60,7 @@ body {
     }
 
     .heading-background {
-        background-color: rgb(43, 43, 43);
+        background-color: rgb(31, 31, 31);
         border-radius: 2px;
         margin: 1.7rem 0;
     }
@@ -164,7 +164,6 @@ img {
 
     h2,
     h3 {
-        color: white;
         text-align: center;
         font-family: 'Open Sans', sans serif;
     }
@@ -172,6 +171,11 @@ img {
     h2 {
         color: rgb(240, 25, 90);
         margin-bottom: 0.5rem;
+    }
+
+    h3 {
+        color: rgb(196, 196, 196);
+        font-weight: 300;
     }
 }
 
