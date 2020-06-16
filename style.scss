@@ -47,15 +47,22 @@ body {
     }
 
     h1 {
-        font-family: 'Kaushan Script', cursive;
-        margin: 1rem 0 1.5rem;
+        font-family: 'MuseoModerno', cursive;
+        margin: 0;
         color: rgb(240, 25, 90);
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: 5px;
+        padding: 0 5.5rem;
 
         @include mobile {
             font-size: 1.5rem;
         }
+    }
+
+    .heading-background {
+        background-color: rgb(43, 43, 43);
+        border-radius: 2px;
+        margin: 1.7rem 0;
     }
 
     h3 {
@@ -151,7 +158,7 @@ img {
     margin: 2rem;
 
     .circle {
-        width: 15rem;
+        width: 13rem;
         margin: 0;
     }
 
@@ -169,7 +176,8 @@ img {
 }
 
 .menu {
-    .button {
+    .button,
+    .button-alt {
         background-color: rgb(240, 25, 90);
         border: solid 2px rgb(240, 25, 90);
         border-radius: 5px;
@@ -180,6 +188,16 @@ img {
         height: 2.5rem;
         cursor: pointer;
         font-size: 1rem;
+    }
+
+    .button {
+        background-color: rgb(240, 25, 90);
+        border: solid 2px rgb(240, 25, 90);
+    }
+
+    .button-alt {
+        background-color: rgb(158, 8, 53);
+        border: solid 2px rgb(158, 8, 53);
     }
 
     .inverse {
@@ -195,11 +213,8 @@ img {
         font-size: 1rem;
     }
 
-    .button:hover {
-        background-color: orange;
-        border: solid 2px orange;
-    }
-
+    .button:hover,
+    .button-alt:hover,
     .inverse:hover {
         background-color: orange;
         border: solid 2px orange;
@@ -208,4 +223,18 @@ img {
 
 .footer-text {
     padding-bottom: 4rem;
+}
+
+.contact {
+    margin: 1.5rem 0;
+    background-color: rgb(43, 43, 43);
+    p {
+        margin: 0rem;
+        width: 30rem;
+    }
+}
+
+.phone {
+    color: rgb(240, 25, 90);;
+    font-weight: bold;
 }
