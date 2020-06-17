@@ -48,14 +48,22 @@ body {
 
     h1 {
         font-family: 'MuseoModerno', cursive;
-        margin: 1rem;
         color: rgb(240, 25, 90);
         font-size: 3.5rem;
         letter-spacing: 5px;
+        margin: 0;
+        padding: 0 2rem;
 
         @include mobile {
             font-size: 1.5rem;
+            margin: 1rem;
         }
+    }
+
+    .heading-background {
+        background-color: rgb(43, 43, 43);
+        margin: 2rem;
+        border-radius: 5px;
     }
 
     h3 {
