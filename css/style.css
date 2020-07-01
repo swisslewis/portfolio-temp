@@ -236,6 +236,7 @@ p {
 .about-section h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #DE455D;
 }
 
 @media (max-width: 1050px) {
