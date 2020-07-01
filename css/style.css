@@ -37,7 +37,7 @@ a {
 }
 
 .navbar .logo {
-  width: 9rem;
+  width: 8rem;
   margin: 1rem 2rem;
 }
 
@@ -58,7 +58,6 @@ a {
 
 .navbar .nav-links {
   padding: 0 3rem 0.5rem 0;
-  border-bottom: solid 1.5px #DE455D;
 }
 
 .intro {
@@ -133,22 +132,18 @@ a {
   margin-bottom: 1rem;
 }
 
-.about-section .container {
-  display: flex;
-  margin: 3rem 0;
-}
-
-.about-section .container h1 {
-  font-size: 2rem;
-}
-
 .about-section p {
   color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
 .about-section .qualifications {
+  margin-top: 5rem;
   width: 33%;
+}
+
+.about-section .qualifications h1 {
+  font-size: 3rem;
 }
 
 .about-section .about-text {
@@ -156,17 +151,17 @@ a {
 }
 
 .about-section .about-text .email {
-  letter-spacing: 0.1rem;
   font-weight: bold;
-  color: #DE455D;
+  color: red;
+  margin-bottom: 2rem;
 }
 
 .about-section .skills {
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 
 .about-section .skills h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .footer {
@@ -189,5 +184,26 @@ a {
 
 .footer h2 {
   margin: 1rem 0 0;
+}
+
+.footer .github {
+  background-color: black;
+}
+
+.github {
+  background-color: #DE455D;
+  font-weight: bold;
+  margin-top: 0;
+  color: white;
+  width: 5rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.github:hover {
+  background-color: white;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

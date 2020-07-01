@@ -72,7 +72,7 @@ a {
     width: 100%;
 
     .logo {
-        width: 9rem;
+        width: 8rem;
         margin: 1rem 2rem;
     }
 
@@ -93,7 +93,7 @@ a {
 
     .nav-links {
         padding: 0 3rem 0.5rem 0;
-        border-bottom: solid 1.5px $lightRed;
+        // border-bottom: solid 1.5px $lightRed;
     }
 }
 
@@ -168,39 +168,34 @@ a {
         }
     }
 
-    .container {
-        display: flex;
-        margin: 3rem 0;
-
-        h1 {
-            font-size: 2rem;
-        }
-    }
-
     p {
         color: white;
         font-family: 'Open Sans', sans-serif;
     }
 
     .qualifications {
+        margin-top: 5rem;
         width: 33%;
+        h1 {
+            font-size: 3rem;
+        }
     }
 
     .about-text {
         margin-bottom: 2rem;
 
         .email {
-            letter-spacing: 0.1rem;
             font-weight: bold;
-            color: $lightRed;
+            color: red;
+            margin-bottom: 2rem;
         }
     }
 
     .skills {
-        margin: 3rem 0;
+        margin: 5rem 0;
 
         h1 {
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
 }
@@ -225,4 +220,25 @@ a {
     h2 {
         margin: 1rem 0 0;
     }
+
+    .github {
+        background-color: black;
+    }
+}
+
+.github {
+    background-color: $lightRed;
+    font-weight: bold;
+    margin-top: 0;
+    color: white;
+    width: 5rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.github:hover {
+    background-color: white;
+    color: red;
 }
