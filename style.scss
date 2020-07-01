@@ -27,223 +27,202 @@ $desktop-width: 1024px;
     }
 }
 
+// SASS VARIABLES
+
+$lightRed: #DE455D;
+$darkRed: #BF1F37;
+
+// GLOBAL
+
 body {
     margin: 0;
-    background-color: black;
+    background-color: #272727;
     height: 100%;
 }
 
-.main {
+h1,
+h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0.5rem 0;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading-lightred {
+    color: $lightRed;
+}
+
+.heading-darkred {
+    color: $darkRed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 99;
+    align-items: center;
+    width: 100%;
+
+    .logo {
+        width: 9rem;
+        margin: 1rem 2rem;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        margin: 0 1.5rem;
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: $darkRed;
+    }
+
+    .nav-links {
+        padding: 0 3rem 0.5rem 0;
+        border-bottom: solid 1.5px $lightRed;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8rem;
+    height: 100vh;
+    position: relative;
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .image-behind {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: -1;
+        top: 10;
+        left: 0;
+        opacity: 0.1;
+    }
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50;
+    background: rgb(219, 76, 76);
+    background: linear-gradient(180deg, rgba(219, 76, 76, 1) 28%, rgba(255, 164, 164, 1) 100%);
+
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        padding: 2rem;
+
+        h1 {
+            margin: 2rem 0 1rem;
+        }
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .project-grid:hover {
+        background-color: $darkRed;
+    }
+
+    .project-image {
+        width: 20rem;
+    }
+}
+
+.about-section {
+    margin: 4rem 0 7rem 7rem;
+
+    .about-me {
+        margin: 2rem 0;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .container {
+        display: flex;
+        margin: 3rem 0;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .qualifications {
+        width: 33%;
+    }
+
+    .about-text {
+        margin-bottom: 2rem;
+
+        .email {
+            letter-spacing: 0.1rem;
+            font-weight: bold;
+            color: $lightRed;
+        }
+    }
+
+    .skills {
+        margin: 3rem 0;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 100%;
     background-color: black;
+    padding: 2rem;
 
-    @include tablet {
-        height: 100%;
-    }
-
-    h1 {
-        font-family: 'MuseoModerno', cursive;
-        color: rgb(240, 25, 90);
-        font-size: 3.5rem;
-        letter-spacing: 5px;
-        margin: 0;
-        padding: 0 2rem;
-
-        @include mobile {
-            font-size: 1.5rem;
-            margin: 1rem;
-        }
-    }
-
-    .heading-background {
-        background-color: rgb(43, 43, 43);
-        margin: 2rem;
-        border-radius: 5px;
-    }
-
-    h3 {
-        color: white;
-        font-family: 'Noto Sans', sans-serif;
-        margin: 2rem 0 0;
-
-        @include tablet {
-            width: 20rem;
-        }
-    }
-
-    h4 {
-        color: white;
-        font-family: 'Open Sans', sans-serif;
-        margin: 0;
-        margin-top: 1rem;
-
-        @include tablet {
-            width: 20rem;
-        }
+    img {
+        width: 8rem;
     }
 
     p {
-        font-family: 'Open Sans', sans-serif;
-        margin-bottom: 0rem;
-        font-size: 1rem;
-        line-height: 1.8rem;
-        width: 45rem;
         color: white;
-
-        @include tablet {
-            width: 20rem;
-        }
-    }
-
-    a {
-        color: rgb(240, 25, 90);
-        font-weight: bold;
-    }
-
-    a:hover {
-        color: orange;
-    }
-
-    .logo {
-        width: 10rem;
-        margin: 3rem 0 0.5rem;
-    }
-
-    .menu {
-        display: flex;
-
-        @include mobile {
-            .button,
-            .inverse {
-                border: none;
-                background-color: black !important;
-                color: rgb(240, 25, 90);
-                text-decoration: underline;
-                margin: 0;
-                width: 5rem;
-            }
-        }
-    }
-
-    .photo {
-        width: 15rem;
-    }
-}
-
-img {
-    margin-top: 2rem;
-}
-
-.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-
-    h3 {
-        margin-top: 0;
-    }
-}
-
-.circles {
-    display: flex;
-
-    @include tablet {
-        display: grid;
-        grid-template-columns: 100%;
-    }
-}
-
-.project {
-    margin: 2rem;
-
-    .circle {
-        width: 13rem;
-        margin: 0;
-    }
-
-    h2,
-    h3 {
-        text-align: center;
-        font-family: 'Open Sans', sans serif;
+        font-family: 'Open Sans', sans-serif;
     }
 
     h2 {
-        color: rgb(240, 25, 90);
-        margin-bottom: 0.5rem;
+        margin: 1rem 0 0;
     }
-
-    h3 {
-        color: rgb(196, 196, 196);
-        font-weight: 300;
-    }
-}
-
-.menu {
-    .button,
-    .button-alt {
-        background-color: rgb(240, 25, 90);
-        border: solid 2px rgb(240, 25, 90);
-        border-radius: 5px;
-        color: white;
-        padding: 10px 0;
-        margin: 1rem 1rem 1rem;
-        width: 8rem;
-        height: 2.5rem;
-        cursor: pointer;
-        font-size: 1rem;
-    }
-
-    .button {
-        background-color: rgb(240, 25, 90);
-        border: solid 2px rgb(240, 25, 90);
-    }
-
-    .button-alt {
-        background-color: rgb(158, 8, 53);
-        border: solid 2px rgb(158, 8, 53);
-    }
-
-    .inverse {
-        background-color: rgb(0, 0, 0);
-        border: solid 2px rgb(240, 25, 90);
-        border-radius: 5px;
-        color: white;
-        padding: 10px 0;
-        width: 8rem;
-        height: 2.5rem;
-        margin: 1rem 1rem 1rem;
-        cursor: pointer;
-        font-size: 1rem;
-    }
-
-    .button:hover,
-    .button-alt:hover,
-    .inverse:hover {
-        background-color: orange;
-        border: solid 2px orange;
-    }
-}
-
-.footer-text {
-    padding-bottom: 4rem;
-}
-
-.contact {
-    margin: 1.5rem 0;
-    background-color: rgb(43, 43, 43);
-    p {
-        margin: 0rem;
-        width: 30rem;
-    }
-}
-
-.phone {
-    color: rgb(240, 25, 90);;
-    font-weight: bold;
 }

@@ -5,59 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Lewis</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700;800&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,400&family=Open+Sans:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.min.css">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script type="module" src="main.js"></script>
     <title>Chris Lewis Portfolio</title>
 </head>
 
 <body>
-    <div class="main">
-        <img class="logo" src="assets/CLdesign-white-05.png">
-        <div class="heading-background">
-            <h1>PORTFOLIO</h1>
-        </div>
-        <div class="menu">
-            <button class="inverse" onclick="window.location.href='index.html'">Home</button>
-            <button class="button" onclick="window.location.href='about-me.html'">About Me</button>
-            <button class="button-alt"
-                onclick="window.location.href='https://www.behance.net/christolewis7'">Graphic</button>
-        </div>
-        <div class="circles">
-            <div class="project">
-                <a href="https://www.behance.net/gallery/98450249/UX-Case-Study-Jonos-Garage-Ordering-Application"
-                    target="_blank"><img class="circle" src="assets/circle-burger.png" alt="jono-garage-logo">
-                    <h2>Jono's Garage</h2>
-                </a>
-                <h3>UX Design Project</h3>
-            </div>
-            <div class="project">
-                <a href="https://www.behance.net/gallery/96793245/UX-Case-Study-Logo-Design-ARTmarket-App"
-                    target="_blank"><img class="circle" src="assets/circle-artmarket-02.png" alt="artmarket-logo">
-                    <h2>ARTmarket</h2>
-                </a>
-                <h3>UX Design Project</h3>
-            </div>
-            <div class="project">
-                <a href="https://nostalgic-raman-f83a9a.netlify.app" target="_blank"><img class="circle"
-                        src="assets/circle-blackestate-04.png" alt="artmarket-logo">
-                    <h2>Black Estate</h2>
-                </a>
-                <h3>Web Design Project</h3>
-            </div>
-            <div class="project">
-                <a href="https://awesome-booth-871f11.netlify.app" target="_blank"><img class="circle"
-                        src="assets/circle-nztourism-03.png" alt="artmarket-logo">
-                    <h2>NZ Tourism</h2>
-                </a>
-                <h3>Web Design Project</h3>
+    <nav>
+        <div class="navbar">
+            <img class="logo" src="assets/CL-design-10.png">
+            <div class="nav-links">
+                <li>
+                    <a id="nav-work">WORK</a>
+                    <a id="nav-about">ABOUT ME</a>
+                    <a href="https://www.behance.net/christolewis7" target="_blank">BEHANCE</a>
+                </li>
             </div>
         </div>
-    </div>
+    </nav>
+    <section class="intro">
+        <div class="image-behind">
+            <img src="assets/portfolio-transparent-03.png">
+        </div>
+        <h2>Hi, I'm Chris Lewis</h2>
+        <h1><span class="heading-lightred">WEB DEVELOPER</span> | <span class="heading-darkred">UX
+                DESIGNER</span></h1>
+    </section>
+    <section class="projects">
+        <div class="project-grid">
+            <a href="https://nostalgic-raman-f83a9a.netlify.app/" target="_blank"><img src="assets/black-estate.png"
+                    alt="black-estate" class="project-image"></a>
+            <h1>BLACK ESTATE</h1>
+            <h2>Website Redesign</h2>
+        </div>
+        <div class="project-grid">
+            <a href="https://www.behance.net/gallery/98450249/UX-Case-Study-Logo-Design-Jonos-Garage-Ordering-App"
+                target="_blank"><img src="assets/jonos-garage-02.png" alt="black-estate" class="project-image"></a>
+            <h1>JONO'S GARAGE</h1>
+            <h2>Application/UX Design</h2>
+        </div>
+        <div class="project-grid">
+            <a href="http://yfm.cldesign.nz" target="_blank"><img src="assets/yfm-04.png" alt="black-estate"
+                    class="project-image"></a>
+            <h1>YOUTH FOR MUSIC</h1>
+            <h2>Wordpress Development</h2>
+        </div>
+        <div class="project-grid">
+            <a href="https://awesome-booth-871f11.netlify.app/"><img src="assets/nztourism-05.png" alt="black-estate"
+                    class="project-image"></a>
+            <h1>NZ TOURISM APPLICATION</h1>
+            <h2>Single Page Application</h2>
+        </div>
+        <div class="project-grid">
+            <a href="https://awesome-booth-871f11.netlify.app/"><img src="assets/nztourism-05.png" alt="black-estate"
+                    class="project-image"></a>
+            <h1>ARTMARKET</h1>
+            <h2>Application/UX Design</h2>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="about-me">
+            <h1>ABOUT ME</h1>
+            <h2>I’m a <span class="heading-lightred">WEB DEVELOPER</span> & <span class="heading-darkred">UX
+                    DESIGNER</span> from Christchurch, New Zealand</h2>
+        </div>
+        <div class="about-text">
+            <p>I am a passionate Web Designer, Developer, UX and Graphic Designer. I specialise in Web Development,
+                Wordpress Development and UX Design</p>
+            <p>Please feel free to contact me regarding anything</p>
+            <p class="email">design.chrislewis@gmail.com</p>
+        </div>
+        <div class="qualifications">
+            <h1>Qualifications</h1>
+            <p>Diploma in <span class="heading-lightred">WEB</span> & <span class="heading-darkred">UX
+                    DESIGN</span> (level 6)</p>
+            <p>Diploma in <span class="heading-lightred">GRAPHIC DESIGN</span>
+                (level 6)</p>
+            <p>Diploma in <span class="heading-lightred">WEB</span> & <span class="heading-darkred">GRAPHIC</span>
+                (level 5)</p>
+        </div>
 
+        <div class="skills">
+            <h1>Skills</h1>
+            <p><span class="heading-lightred">HTML</span> <span class="heading-darkred">CSS</span> JAVASCRIPT <span
+                    class="heading-lightred">VUE.js</span> <span class="heading-darkred">WORDPRESS</span> PHP</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="assets/CL-design-10.png">
+            <h2>CL Design</h2>
+            <p><span class="heading-lightred">design.chrislewis@gmail.com</span></p>
+        </div>
+    </footer>
 </body>
 
 </html>
