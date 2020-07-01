@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #272727;
+  background-color: #1b1b1b;
   height: 100%;
 }
 
@@ -17,6 +17,10 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .heading-lightred {
@@ -36,9 +40,27 @@ a {
   width: 100%;
 }
 
+@media (max-width: 750px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+}
+
 .navbar .logo {
   width: 8rem;
   margin: 1rem 2rem;
+}
+
+@media (max-width: 1050px) {
+  .navbar .logo {
+    margin: 2rem 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar .logo {
+    margin: 2rem 2rem 2rem 4rem;
+  }
 }
 
 .navbar li {
@@ -48,8 +70,14 @@ a {
 .navbar a {
   font-family: 'Open Sans', sans-serif;
   color: white;
-  margin: 0 1.5rem;
+  margin: 1rem 1.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  .navbar a {
+    margin: 0;
+  }
 }
 
 .navbar a:hover {
@@ -57,7 +85,20 @@ a {
 }
 
 .navbar .nav-links {
-  padding: 0 3rem 0.5rem 0;
+  display: block;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 1050px) {
+  .navbar .nav-links {
+    margin: 2rem 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar .nav-links {
+    margin: 2rem 4rem 2rem 0;
+  }
 }
 
 .intro {
@@ -69,12 +110,42 @@ a {
   position: relative;
 }
 
+@media (max-width: 420px) {
+  .intro {
+    margin: 2rem;
+  }
+}
+
 .intro h1 {
   font-size: 5rem;
 }
 
+@media (max-width: 1050px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .intro h2 {
   font-size: 4rem;
+}
+
+@media (max-width: 1050px) {
+  .intro h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .intro h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .intro .image-behind {
@@ -87,12 +158,30 @@ a {
   opacity: 0.1;
 }
 
+@media (max-width: 420px) {
+  .intro .image-behind img {
+    width: 100%;
+  }
+}
+
 .projects {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 50% 50;
   background: #db4c4c;
   background: linear-gradient(180deg, #db4c4c 28%, #ffa4a4 100%);
+}
+
+@media (max-width: 1050px) {
+  .projects {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .projects {
+    padding: 2rem 0;
+  }
 }
 
 .projects .project-grid {
@@ -103,16 +192,30 @@ a {
   padding: 2rem;
 }
 
+@media (max-width: 420px) {
+  .projects .project-grid {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
 .projects .project-grid h1 {
+  font-size: 2rem;
   margin: 2rem 0 1rem;
 }
 
 .projects .project-grid h2 {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .projects .project-grid:hover {
   background-color: #BF1F37;
+}
+
+.projects .project-grid:hover h1,
+.projects .project-grid:hover h2 {
+  color: black;
 }
 
 .projects .project-image {
@@ -120,16 +223,35 @@ a {
 }
 
 .about-section {
-  margin: 4rem 0 7rem 7rem;
+  margin: 7rem;
+}
+
+@media (max-width: 420px) {
+  .about-section {
+    margin: 0 2rem;
+    padding: 2rem 0;
+  }
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1050px) {
+  .about-section h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .about-section h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .about-section .about-me {
   margin: 2rem 0;
-}
-
-.about-section .about-me h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
 .about-section p {
@@ -138,21 +260,26 @@ a {
 }
 
 .about-section .qualifications {
-  margin-top: 5rem;
-  width: 33%;
+  margin: 5rem 0;
 }
 
-.about-section .qualifications h1 {
-  font-size: 3rem;
+@media (max-width: 420px) {
+  .about-section .qualifications {
+    margin: 3rem 0;
+  }
 }
 
 .about-section .about-text {
   margin-bottom: 2rem;
 }
 
+.about-section .about-text .github {
+  margin-top: 2rem;
+}
+
 .about-section .about-text .email {
   font-weight: bold;
-  color: red;
+  color: #BF1F37;
   margin-bottom: 2rem;
 }
 
@@ -160,8 +287,10 @@ a {
   margin: 5rem 0;
 }
 
-.about-section .skills h1 {
-  font-size: 3rem;
+@media (max-width: 420px) {
+  .about-section .skills {
+    margin: 3rem 0;
+  }
 }
 
 .footer {

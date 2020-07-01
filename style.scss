@@ -1,5 +1,5 @@
 $mobile-width: 420px;
-$tablet-small-width: 650px;
+$tablet-small-width: 750px;
 $tablet-width: 1050px;
 $desktop-width: 1024px;
 
@@ -36,7 +36,7 @@ $darkRed: #BF1F37;
 
 body {
     margin: 0;
-    background-color: #272727;
+    background-color: #1b1b1b;
     height: 100%;
 }
 
@@ -55,6 +55,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .heading-lightred {
     color: $lightRed;
 }
@@ -71,9 +75,21 @@ a {
     align-items: center;
     width: 100%;
 
+    @include tablet-small {
+        justify-content: flex-start;
+    }
+
     .logo {
         width: 8rem;
         margin: 1rem 2rem;
+
+        @include tablet {
+            margin: 2rem 4rem;
+        }
+
+        @include tablet-small {
+            margin: 2rem 2rem 2rem 4rem;
+        }
     }
 
     li {
@@ -83,8 +99,12 @@ a {
     a {
         font-family: 'Open Sans', sans-serif;
         color: white;
-        margin: 0 1.5rem;
+        margin: 1rem 1.5rem;
         cursor: pointer;
+
+        @include mobile {
+            margin: 0;
+        }
     }
 
     a:hover {
@@ -92,8 +112,16 @@ a {
     }
 
     .nav-links {
-        padding: 0 3rem 0.5rem 0;
-        // border-bottom: solid 1.5px $lightRed;
+        display: block;
+        margin-right: 0.5rem;
+
+        @include tablet {
+            margin: 2rem 4rem;
+        }
+
+        @include tablet-small {
+            margin: 2rem 4rem 2rem 0;
+        }
     }
 }
 
@@ -105,12 +133,32 @@ a {
     height: 100vh;
     position: relative;
 
+    @include mobile {
+        margin: 2rem;
+    }
+
     h1 {
         font-size: 5rem;
+
+        @include tablet {
+            font-size: 3rem;
+        }
+
+        @include mobile {
+            font-size: 2.5rem;
+        }
     }
 
     h2 {
         font-size: 4rem;
+
+        @include tablet {
+            font-size: 2.5rem;
+        }
+
+        @include mobile {
+            font-size: 1.8rem;
+        }
     }
 
     .image-behind {
@@ -121,6 +169,12 @@ a {
         top: 10;
         left: 0;
         opacity: 0.1;
+
+        img {
+            @include mobile {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -131,6 +185,14 @@ a {
     background: rgb(219, 76, 76);
     background: linear-gradient(180deg, rgba(219, 76, 76, 1) 28%, rgba(255, 164, 164, 1) 100%);
 
+    @include tablet {
+        grid-template-columns: 100%;
+    }
+
+    @include mobile {
+        padding: 2rem 0;
+    }
+
     .project-grid {
         display: flex;
         flex-direction: column;
@@ -138,17 +200,29 @@ a {
         margin: 2rem;
         padding: 2rem;
 
+        @include mobile {
+            margin: 1rem;
+            padding: 1rem;
+        }
+
         h1 {
+            font-size: 2rem;
             margin: 2rem 0 1rem;
         }
 
         h2 {
             margin: 0;
+            font-size: 1.5rem;
         }
     }
 
     .project-grid:hover {
         background-color: $darkRed;
+
+        h1,
+        h2 {
+            color: black;
+        }
     }
 
     .project-image {
@@ -157,15 +231,30 @@ a {
 }
 
 .about-section {
-    margin: 4rem 0 7rem 7rem;
+    margin: 7rem;
+
+    @include mobile {
+        margin: 0 2rem;
+        padding: 2rem 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    h2 {
+        @include tablet {
+            font-size: 1.2rem;
+        }
+    }
 
     .about-me {
         margin: 2rem 0;
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
     }
 
     p {
@@ -174,19 +263,23 @@ a {
     }
 
     .qualifications {
-        margin-top: 5rem;
-        width: 33%;
-        h1 {
-            font-size: 3rem;
+        margin: 5rem 0;
+
+        @include mobile {
+            margin: 3rem 0;
         }
     }
 
     .about-text {
         margin-bottom: 2rem;
 
+        .github {
+            margin-top: 2rem;
+        }
+
         .email {
             font-weight: bold;
-            color: red;
+            color: $darkRed;
             margin-bottom: 2rem;
         }
     }
@@ -194,8 +287,8 @@ a {
     .skills {
         margin: 5rem 0;
 
-        h1 {
-            font-size: 3rem;
+        @include mobile {
+            margin: 3rem 0;
         }
     }
 }
