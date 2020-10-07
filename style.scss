@@ -31,24 +31,35 @@ $desktop-width: 1024px;
 
 $lightRed: #DE455D;
 $darkRed: #BF1F37;
+$peachRed: #D64D4D;
 
 // GLOBAL
 
 body {
     margin: 0;
-    background-color: #1b1b1b;
+    background-color: rgba(32, 32, 32, 1);
     height: 100%;
+}
+
+h1 {
+    font-family: bree, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
 }
 
 h1,
 h2 {
     color: white;
-    font-family: 'Poppins', sans-serif;
     margin: 0.5rem 0;
 }
 
 h2 {
+    font-family: bree, sans-serif;
     font-weight: 300;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -59,6 +70,10 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+.introduction {
+    font-size: 0.8rem;
+}
+
 .heading-lightred {
     color: $lightRed;
 }
@@ -67,10 +82,34 @@ p {
     color: $darkRed;
 }
 
-.navbar {
+.heading-dark {
+    color: black;
+}
+
+//Header
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
     display: flex;
-    justify-content: space-between;
-    position: absolute;
+    justify-content: flex-end;
+    background-color: rgba(32, 32, 32, 0.5);
     z-index: 99;
     align-items: center;
     width: 100%;
@@ -80,8 +119,8 @@ p {
     }
 
     .logo {
-        width: 8rem;
-        margin: 1rem 2rem;
+        width: 6rem;
+        margin: 2rem 3rem;
 
         @include tablet {
             margin: 2rem 4rem;
@@ -113,7 +152,6 @@ p {
 
     .nav-links {
         display: block;
-        margin-right: 0.5rem;
 
         @include tablet {
             margin: 2rem 4rem;
@@ -129,16 +167,19 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 8rem;
+    padding-left: 8rem;
     height: 100vh;
     position: relative;
+    top: 60px;
+    background-color: rgba(32, 32, 32, 1);
+
 
     @include mobile {
         margin: 2rem;
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 5.5rem;
 
         @include tablet {
             font-size: 3rem;
@@ -150,7 +191,9 @@ p {
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+        color: rgb(214, 214, 214);
 
         @include tablet {
             font-size: 2.5rem;
@@ -161,14 +204,19 @@ p {
         }
     }
 
+    .background-position {
+        position: relative;
+        z-index: -1;
+        top: -650px;
+    }
+
     .image-behind {
         display: flex;
         justify-content: center;
         position: absolute;
         z-index: -1;
-        top: 10;
         left: 0;
-        opacity: 0.1;
+        // opacity: 0.5;
 
         img {
             @include mobile {
@@ -176,62 +224,43 @@ p {
             }
         }
     }
-}
 
-.projects {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50;
-    background: rgb(219, 76, 76);
-    background: linear-gradient(180deg, rgba(219, 76, 76, 1) 28%, rgba(255, 164, 164, 1) 100%);
-
-    @include tablet {
-        grid-template-columns: 100%;
+    .intro-text h2 {
+        display: block;
+        z-index: 5;
+        position: relative;
+        height: 0rem;
+        padding: 0 0 2rem 0;
     }
 
-    @include mobile {
-        padding: 2rem 0;
+    .heading-text h1 {
+        display: block;
+        z-index: 6;
+        position: relative;
+        padding: 0 0 3rem 0;
     }
 
-    .project-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 2rem;
-        padding: 2rem;
-
-        @include mobile {
-            margin: 1rem;
-            padding: 1rem;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin: 2rem 0 1rem;
-        }
-
-        h2 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
-    }
-
-    .project-grid:hover {
-        background-color: $darkRed;
-
-        h1,
-        h2 {
-            color: black;
-        }
-    }
-
-    .project-image {
-        width: 20rem;
+    .art {
+        width: 80rem;
+        opacity: 1;
     }
 }
+
+.line {
+    width: 20rem;
+    border: 2px solid white;
+    margin-left: 7rem;
+}
+
+//ABOUT SECTION
 
 .about-section {
-    margin: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $peachRed;
+    // height: 100vh;
 
     @include mobile {
         margin: 0 2rem;
@@ -240,8 +269,8 @@ p {
 
     h1 {
         font-size: 3rem;
-        margin-bottom: 1rem;
-        color: $lightRed;
+        padding: 8rem 0 1rem;
+        color: white;
 
         @include tablet {
             font-size: 2rem;
@@ -254,42 +283,129 @@ p {
         }
     }
 
+    p {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        padding: 2rem 10rem;
+    }
+
+    .profile-pic {
+        width: 15rem;
+        border-radius: 150px;
+    }
+
     .about-me {
         margin: 2rem 0;
     }
 
-    p {
-        color: white;
-        font-family: 'Open Sans', sans-serif;
+    .contact-icons {
+        display: flex;
+        padding-bottom: 5rem;
+
+        .fa-linkedin {
+            color: white;
+            padding: 0 0.5rem 2rem;
+        }
+
+        .fa-linkedin:hover {
+            color: black;
+        }
+
+        .fa-envelope-square {
+            color: white;
+            padding: 0 0.5rem 2rem;
+        }
+
+        .fa-envelope-square:hover {
+            color: black;
+        }
+    }
+}
+
+.skills {
+    background-color: $darkRed;
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        padding: 8rem 0 1rem;
+        margin: 0;
     }
 
-    .qualifications {
-        margin: 5rem 0;
+    .icon-grid {
+        display: grid;
+        text-align: center;
+        padding: 5rem 0 15rem 0;
+        margin: 0 20rem;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    }
+
+    .icon-container {
+        padding: 2rem 0;
+    }
+}
+
+.projects-section {
+    background: rgb(42, 42, 42);
+    background: linear-gradient(180deg, rgba(42, 42, 42, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    text-align: center;
+
+    h1 {
+        font-size: 4rem;
+        padding-top: 5rem;
+        margin: 0;
+    }
+
+    .projects {
+
+        @include tablet {
+            grid-template-columns: 100%;
+        }
 
         @include mobile {
-            margin: 3rem 0;
-        }
-    }
-
-    .about-text {
-        margin-bottom: 2rem;
-
-        .github {
-            margin-top: 2rem;
+            padding: 2rem 0;
         }
 
-        .email {
-            font-weight: bold;
-            color: $darkRed;
-            margin-bottom: 2rem;
+        .project-grid {
+            display: block;
+            margin: 2rem 0;
+            padding: 2rem;
+
+            @include mobile {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 400;
+                padding: 1rem 0 0.5rem;
+                color: $lightRed;
+            }
+
+            h2 {
+                margin: 0;
+                font-size: 1.2rem;
+                color: $darkRed;
+            }
+
+            p {
+                color: white;
+            }
         }
-    }
 
-    .skills {
-        margin: 5rem 0;
+        .project-grid:hover {
+            background-color: $darkRed;
 
-        @include mobile {
-            margin: 3rem 0;
+            h1,
+            h2 {
+                color: black;
+            }
+        }
+
+        .project-image {
+            width: 20rem;
         }
     }
 }
@@ -301,6 +417,10 @@ p {
     align-items: center;
     background-color: black;
     padding: 2rem;
+
+    .logo {
+        width: 5rem;
+    }
 
     img {
         width: 8rem;
@@ -320,19 +440,18 @@ p {
     }
 }
 
-.github {
-    background-color: $lightRed;
+h4 {
     font-weight: bold;
-    margin-top: 0;
-    color: white;
-    width: 5rem;
+    margin-top: 2rem;
+    color: $lightRed;
     border-radius: 5px;
-    text-align: center;
-    padding: 0.5rem;
     cursor: pointer;
 }
 
+h4:hover {
+    color: white;
+}
+
 .github:hover {
-    background-color: white;
-    color: red;
+    color: white;
 }

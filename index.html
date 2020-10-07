@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Lewis</title>
-    <link rel="icon" href="assets/CL-design-10.png">
+    <link rel="icon" href="assets/cl-design-15.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./dist/style.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qaa4kic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.min.css">
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script type="module" src="main.js"></script>
@@ -18,95 +22,198 @@
 
 <body>
     <nav>
-        <div class="navbar">
-            <img class="logo" src="assets/CL-design-10.png">
+        <div class="header headroom headroom--unpinned headroom--pinned">
             <div class="nav-links">
-                <li>
+                <li class="nav-list">
                     <a id="nav-work">WORK</a>
                     <a id="nav-about">ABOUT ME</a>
                     <a href="https://www.behance.net/christolewis7" target="_blank">BEHANCE</a>
                 </li>
             </div>
+            <!-- LOGO -->
+            <img class="logo" src="assets/cl-design-18.png">
         </div>
     </nav>
     <section class="intro">
-        <div class="image-behind">
-            <img src="assets/portfolio-transparent-03.png">
-        </div>
-        <h2>Hi, I'm Chris Lewis</h2>
-        <h1><span class="heading-lightred">WEB DEVELOPER</span> | <span class="heading-darkred">UX
-                DESIGNER</span></h1>
-    </section>
-    <section class="projects">
-        <div class="project-grid">
-            <a href="https://nostalgic-raman-f83a9a.netlify.app/" target="_blank"><img src="assets/black-estate.png"
-                    alt="black-estate" class="project-image"></a>
-            <h1>BLACK ESTATE</h1>
-            <h2>Website Redesign</h2>
-        </div>
-        <div class="project-grid">
-            <a href="https://www.behance.net/gallery/98450249/UX-Case-Study-Logo-Design-Jonos-Garage-Ordering-App"
-                target="_blank"><img src="assets/jonos-garage-02.png" alt="black-estate" class="project-image"></a>
-            <h1>JONO'S GARAGE</h1>
-            <h2>Application/UX Design</h2>
-        </div>
-        <div class="project-grid">
-            <a href="http://yfm.cldesign.nz" target="_blank"><img src="assets/yfm-04.png" alt="black-estate"
-                    class="project-image"></a>
-            <h1>YOUTH FOR MUSIC</h1>
-            <h2>Wordpress Development</h2>
-        </div>
-        <div class="project-grid">
-            <a href="https://awesome-booth-871f11.netlify.app/"><img src="assets/nztourism-05.png" alt="black-estate"
-                    class="project-image"></a>
-            <h1>NZ TOURISM</h1>
-            <h2>Single Page Application</h2>
-        </div>
-        <div class="project-grid">
-            <a href="https://www.behance.net/gallery/96793245/UX-Case-Study-Logo-Design-ARTmarket-App"><img src="assets/artmarket-06.png" alt="black-estate"
-                    class="project-image"></a>
-            <h1>ARTMARKET</h1>
-            <h2>Application/UX Design</h2>
-        </div>
-    </section>
-    <section class="about-section">
-        <div class="about-me">
-            <h1>ABOUT ME</h1>
-            <h2>I’m a <span class="heading-lightred">WEB DEVELOPER</span> & <span class="heading-darkred">UX
-                    DESIGNER</span> from Christchurch, New Zealand</h2>
-        </div>
-        <div class="about-text">
-            <p>I am a passionate Web Designer, Developer, UX and Graphic Designer. I specialise in Web Development,
-                Wordpress Development and UX Design</p>
-            <p>Please feel free to contact me regarding anything</p>
-            <a href="https://github.com/swisslewis" target="_blank"><p class="github">Github</p></a>
-        </div>
-        <div class="qualifications">
-            <h1>Qualifications</h1>
-            <p>Diploma in <span class="heading-lightred">WEB</span> & <span class="heading-darkred">UX
-                    DESIGN</span> (level 6)</p>
-            <p>Diploma in <span class="heading-lightred">GRAPHIC DESIGN</span>
-                (level 6)</p>
-            <p>Diploma in <span class="heading-lightred">WEB</span> & <span class="heading-darkred">GRAPHIC</span>
-                (level 5)</p>
+        <div class="background-position">
+            <div class="image-behind">
+                <img src="assets/background-drawing-grey-rev-02.png">
+            </div>
         </div>
 
-        <div class="skills">
-            <h1>Skills</h1>
-            <p><span class="heading-lightred">HTML</span> <span class="heading-darkred">CSS</span> JAVASCRIPT <span
-                    class="heading-lightred">VUE.js</span> <span class="heading-darkred">WORDPRESS</span> PHP</p>
+        <div class="intro-text">
+            <h2>Hi, I'm Chris Lewis</h2>
         </div>
-        <div class="contact">
-            <h1>Contact</h1>
-            <p class="email">design.chrislewis@gmail.com</p>
+
+        <div class="heading-text">
+            <h1><span class="heading-lightred">WEB DEVELOPER</span> | <span class="heading-darkred">UX
+                    DESIGNER</span></h1>
+        </div>
+
+        <!-- <img class="art" src="assets/background-drawing.png" alt="background-drawing"> -->
+    </section>
+
+    <!-- ABOUT ME -->
+
+    <section class="about-section">
+        <div class="about-me">
+            <div class="about-me-heading">
+                <h1>My name is Chris and I love to create things</h1>
+            </div>
+            <h2>I’m a <span class="heading-dark">WEB DEVELOPER</span> & <span class="heading-dark">UX
+                    DESIGNER</span> based on Planet Earth</h2>
+        </div>
+
+        <img class="profile-pic" src="assets/woof.jpg" alt="image>
+
+        <div class=" about-text">
+        <p>Whether is it a logo, a website, or music. I love all things creative and find great satisfaction
+            when looking at a finished product. I have spent two years studying Graphic Design and two years
+            studying Web and UX Design. If you need a website, logo, brochure, you name it - I’m here to help.
+            I have spent two years studying Graphic Design, and a further two years studying Web and UX design
+            development.</p>
+        </div>
+        <div class="contact-icons">
+            <i class="fas fa-envelope-square fa-3x"></i>
+            <i class="fab fa-linkedin fa-3x"></i>
+        </div>
+
+
+    </section>
+
+    <section class="skills">
+        <h1>Skills</h1>
+        <div class="icon-grid">
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p>test</p>
+            </div>
         </div>
     </section>
+
+    <!-- ABOUT ME -->
+
+    <!-- PROJECTS -->
+
+    <section class="projects-section">
+        <h1>Projects</h1>
+        <div class="projects">
+
+            <div class="project-grid">
+                <div class="project-image-container">
+                    <a href="https://nostalgic-raman-f83a9a.netlify.app/" target="_blank"><img
+                            src="assets/black-estate.png" alt="black-estate" class="project-image"></a>
+                </div>
+                <div class="project-description">
+                    <h1>BLACK ESTATE</h1>
+                    <h2>Website Redesign</h2>
+                    <p>Project description goes here hello hi</p>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-image-container">
+                    <a href="https://www.behance.net/gallery/98450249/UX-Case-Study-Logo-Design-Jonos-Garage-Ordering-App"
+                        target="_blank"><img src="assets/jonos-garage-02.png" alt="black-estate"
+                            class="project-image"></a>
+                </div>
+                <div class="project-description">
+                    <h1>JONO'S GARAGE</h1>
+                    <h2>Application/UX Design</h2>
+                    <p>Project description goes here</p>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-image-container">
+                    <a href="http://yfm.cldesign.nz" target="_blank"><img src="assets/yfm-04.png" alt="black-estate"
+                            class="project-image"></a>
+                </div>
+                <div class="project-description">
+                    <h1>YOUTH FOR MUSIC</h1>
+                    <h2>Wordpress Development</h2>
+                    <p>Project description goes here</p>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-image-container">
+                    <a href="https://awesome-booth-871f11.netlify.app/"><img src="assets/nztourism-05.png"
+                            alt="black-estate" class="project-image"></a>
+                </div>
+                <div class="project-description">
+                    <h1>NZ TOURISM</h1>
+                    <h2>Single Page Application</h2>
+                    <p>Project description goes here</p>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-image-container">
+                    <a href="https://www.behance.net/gallery/96793245/UX-Case-Study-Logo-Design-ARTmarket-App"><img
+                            src="assets/artmarket-06.png" alt="black-estate" class="project-image"></a>
+                </div>
+                <div class="project-description">
+                    <h1>ARTMARKET</h1>
+                    <h2>Application/UX Design</h2>
+                    <p>Project description goes here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer">
-            <img src="assets/CL-design-10.png">
+            <img class="logo" src="assets/CL-design-10.png">
             <h2>CL Design</h2>
             <p><span class="heading-lightred">design.chrislewis@gmail.com</span></p>
-            <a href="https://github.com/swisslewis" target="_blank"><p class="github">Github</p></a>
+            <a href="https://github.com/swisslewis" target="_blank">
+                <p class="github">Github</p>
+            </a>
         </div>
     </footer>
 </body>
