@@ -6,201 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Lewis</title>
     <link rel="icon" href="assets/cl-design-15.png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/qaa4kic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.min.css">
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script type="module" src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Chris Lewis Portfolio</title>
 </head>
 
 <body>
-    <nav>
-        <div class="header headroom headroom--unpinned headroom--pinned">
-            <div class="nav-links">
-                <li class="nav-list">
-                    <a id="nav-work">WORK</a>
-                    <a id="nav-about">ABOUT ME</a>
-                    <a href="https://www.behance.net/christolewis7" target="_blank">BEHANCE</a>
-                </li>
+    <header class="header">
+        <nav class="nav-links">
+            <ul class="nav-list">
+                <li><a id="nav-about">ABOUT</a></li>
+                <li><a id="nav-skills">SKILLS</a></li>
+                <li><a id="nav-work">PROJECTS</a></li>
+                <li><a href="https://www.behance.net/christolewis7" target="_blank">BEHANCE</a></li>
+            </ul>
+            <img class="logo" src="assets/logo.png" alt="cl-design">
+        </nav>
+
+        <!-- MOBILE NAVIGATION -->
+
+        <div class="nav-mobile">
+            <div class="logo-mobile-header">
+                <img class="logo" src="assets/logo.png" alt="cl-design">
+                <img class="mobile-logo" src="assets/logo-black-09.png" alt="cl-design">
             </div>
-            <!-- LOGO -->
-            <img class="logo" src="assets/cl-design-18.png">
+            <a class="toggle-nav" id="toggle-nav">&#9776;</a>
+            <a class="close-nav" id="close-nav">&times;</a>
         </div>
-    </nav>
+
+        <nav class="nav-mobile-display" id="show-nav">
+            <div class="nav-mobile-menu">
+                <ul>
+                    <li><a id="nav-about" href="#about">ABOUT</a></li>
+                    <li><a id="nav-skills">SKILLS</a></li>
+                    <li><a id="nav-work">PROJECTS</a></li>
+                    <li><a href="https://www.behance.net/christolewis7" target="_blank">BEHANCE</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <section class="intro">
-        <div class="background-position">
-            <div class="image-behind">
-                <img src="assets/background-drawing-grey-rev-02.png">
-            </div>
-        </div>
 
         <div class="intro-text">
             <h2>Hi, I'm Chris Lewis</h2>
-        </div>
-
-        <div class="heading-text">
             <h1><span class="heading-lightred">WEB DEVELOPER</span> | <span class="heading-darkred">UX
                     DESIGNER</span></h1>
         </div>
 
-        <!-- <img class="art" src="assets/background-drawing.png" alt="background-drawing"> -->
+        <div class="intro-text-mobile">
+            <h2>Hi, I'm Chris</h2>
+            <h1 class="large-heading"><span class="heading-darkred">WEB</span></h1>
+            <h1 class="medium-heading">//</h1>
+            <h1 class="large-heading"><span class="heading-lightred">UX</span></h1>
+            <h1 class="medium-heading">DESIGNER</span></h1>
+        </div>
     </section>
 
     <!-- ABOUT ME -->
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about-me">
             <div class="about-me-heading">
-                <h1>My name is Chris and I love to create things</h1>
+                <h1 class="scroll-header">HI, I'M CHRIS</h1>
+                <h2 class="scroll-header">I LIKE TO CREATE THINGS</h1>
             </div>
-            <h2>I’m a <span class="heading-dark">WEB DEVELOPER</span> & <span class="heading-dark">UX
-                    DESIGNER</span> based on Planet Earth</h2>
         </div>
 
-        <img class="profile-pic" src="assets/woof.jpg" alt="image>
+        <img class="profile-pic" src="assets/woof.jpg" alt="image">
 
-        <div class=" about-text">
-        <p>Whether is it a logo, a website, or music. I love all things creative and find great satisfaction
-            when looking at a finished product. I have spent two years studying Graphic Design and two years
-            studying Web and UX Design. If you need a website, logo, brochure, you name it - I’m here to help.
-            I have spent two years studying Graphic Design, and a further two years studying Web and UX design
-            development.</p>
+        <div class="about-text">
+            <p>Whether is it a logo, a website, or music. I love all things creative and find great satisfaction
+                when looking at a finished product. I have spent two years studying Graphic Design and two years
+                studying Web and UX Design. If you need a website, logo, brochure, you name it - I’m here to help.
+                I have spent two years studying Graphic Design, and a further two years studying Web and UX design
+                development.</p>
         </div>
-        <div class="contact-icons">
-            <i class="fas fa-envelope-square fa-3x"></i>
-            <i class="fab fa-linkedin fa-3x"></i>
+
+        <h4 class="contact-show">Contact Me</h4>
+        <h4 class="contact-hide">Hide</h4>
+
+        <div class="contact-details">
+            <p>Mobile: +64-272-583-710</p>
+            <p>Email: design.chrislewis@gmail.com</p>
         </div>
 
 
     </section>
 
-    <section class="skills">
-        <h1>Skills</h1>
-        <div class="icon-grid">
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
+    <section class="services">
+        <h1>This is what I do...</h1>
+        <div class="services-content">
+            <div class="services-container service-bg-1">
+                <img class="service-image" src="assets/computer-red-25.png" alt="logo-image">
+                <h3 class="digital-design">DIGITAL DESIGN AND DEVELOPMENT</h3>
+                <p>I specialise in Wordpress development and general web design</p>
             </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
+            <div class="services-container service-bg-2">
+                <img class="image-phone" src="assets/pen-red-26.png" alt="logo-image">
+                <h3 class="logo-design">INTERFACE & UX DESIGN</h3>
+                <p>Mobile application design, and ensuring that the user experience as smooth as possible</p>
             </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
-            </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
-            </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
-            </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
-            </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
-            </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
-            </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
-            </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
-            </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
-            </div>
-            <div class="icon-container">
-                <i class="fab fa-linkedin fa-4x"></i>
-                <p>test</p>
+            <div class="services-container service-bg-3">
+                <img class="service-image" src="assets/burger-red-26.png" alt="logo-image">
+                <h3 class="graphic-design">WEB + GRAPHIC DESIGN</h3>
+                <p>Anything from a layout to a logo. This skillset goes hand in hand with web design</p>
             </div>
         </div>
     </section>
-
-    <!-- ABOUT ME -->
-
-    <!-- PROJECTS -->
 
     <section class="projects-section">
-        <h1>Projects</h1>
         <div class="projects">
 
-            <div class="project-grid">
+            <div class="project-grid top-padding project-CC">
                 <div class="project-image-container">
-                    <a href="https://nostalgic-raman-f83a9a.netlify.app/" target="_blank"><img
+                    <a href="http://custom-construction.cldesign.nz/" target="_blank"><img class="cc-image"
+                            src="assets/CC-07.png" alt="custom-construction"></a>
+                </div>
+            </div>
+
+            <div class="project-grid project-BE">
+                <div class="project-image-container">
+                    <a href="https://project-blackestate.cldesign.nz/" target="_blank"><img
                             src="assets/black-estate.png" alt="black-estate" class="project-image"></a>
                 </div>
-                <div class="project-description">
-                    <h1>BLACK ESTATE</h1>
-                    <h2>Website Redesign</h2>
-                    <p>Project description goes here hello hi</p>
+            </div>
+
+            <div class="project-grid background-second">
+                <div class="project-image-container">
+                    <a href="http://yfm.cldesign.nz" target="_blank"><img src="assets/yfm-04.png" alt="black-estate"
+                            class="project-image"></a>
                 </div>
             </div>
 
             <div class="project-grid">
                 <div class="project-image-container">
                     <a href="https://www.behance.net/gallery/98450249/UX-Case-Study-Logo-Design-Jonos-Garage-Ordering-App"
-                        target="_blank"><img src="assets/jonos-garage-02.png" alt="black-estate"
+                        target="_blank"><img src="assets/jonos-garage-02.png" alt="jonos-garage"
                             class="project-image"></a>
-                </div>
-                <div class="project-description">
-                    <h1>JONO'S GARAGE</h1>
-                    <h2>Application/UX Design</h2>
-                    <p>Project description goes here</p>
                 </div>
             </div>
 
-            <div class="project-grid">
-                <div class="project-image-container">
-                    <a href="http://yfm.cldesign.nz" target="_blank"><img src="assets/yfm-04.png" alt="black-estate"
-                            class="project-image"></a>
-                </div>
-                <div class="project-description">
-                    <h1>YOUTH FOR MUSIC</h1>
-                    <h2>Wordpress Development</h2>
-                    <p>Project description goes here</p>
-                </div>
-            </div>
-
-            <div class="project-grid">
+            <div class="project-grid background-second">
                 <div class="project-image-container">
                     <a href="https://awesome-booth-871f11.netlify.app/"><img src="assets/nztourism-05.png"
                             alt="black-estate" class="project-image"></a>
                 </div>
-                <div class="project-description">
-                    <h1>NZ TOURISM</h1>
-                    <h2>Single Page Application</h2>
-                    <p>Project description goes here</p>
-                </div>
             </div>
 
-            <div class="project-grid">
+            <div class="project-grid bottom-padding">
                 <div class="project-image-container">
                     <a href="https://www.behance.net/gallery/96793245/UX-Case-Study-Logo-Design-ARTmarket-App"><img
                             src="assets/artmarket-06.png" alt="black-estate" class="project-image"></a>
-                </div>
-                <div class="project-description">
-                    <h1>ARTMARKET</h1>
-                    <h2>Application/UX Design</h2>
-                    <p>Project description goes here</p>
                 </div>
             </div>
         </div>
@@ -208,14 +169,10 @@
 
     <footer>
         <div class="footer">
-            <img class="logo" src="assets/CL-design-10.png">
-            <h2>CL Design</h2>
-            <p><span class="heading-lightred">design.chrislewis@gmail.com</span></p>
-            <a href="https://github.com/swisslewis" target="_blank">
-                <p class="github">Github</p>
-            </a>
+            <p>© CL Design 2020</p>
         </div>
     </footer>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
